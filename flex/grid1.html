@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container1{
+            display:grid;
+            background-color: lightgray;
+            text-align: right;
+            grid-template-columns: repeat(2,1fr);
+            gap: 20px;
+        }
+        .container2{
+            display:grid;
+            background-color: yellow;
+            text-align:left;
+            grid-template-rows: repeat(2,1fr);
+            gap: 20px;
+            grid-column: auto;
+        }
+        .container3{
+            display:grid;
+            background-color: brown;
+            text-align: end;
+            grid-template-areas: repeat(2,1fr);
+            gap: 20px;
+            grid-row:span;
+        }
+        .container4{
+            display:grid;
+            background-color:green;
+            text-align: left;
+            grid-template-columns: repeat(2,1fr);
+            gap: 20px;
+            grid-auto-flow: row;
+        }
+        .container5{
+            display:grid;
+            background-color:goldenrod;
+            text-align: center;
+            grid-template-rows: repeat(2,1fr);
+            gap: 20px;
+            grid-row-start: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container1">
+        <div>Rose</div>
+        <div>Jasmine</div>
+        <div>Lotus</div>
+        <div>Sunflower</div>
+        <div>Lily</div>
+    </div>
+    <div class="container2">
+        <div>Rose</div>
+        <div>Jasmine</div>
+        <div>Lotus</div>
+        <div>Sunflower</div>
+        <div>Lilly</div>
+    </div>
+    <div class="container3">
+        <div>Rose</div>
+        <div>Jasmine</div>
+        <div>Lotus</div>
+        <div>Sunflower</div>
+        <div>Lilly</div>
+    </div>
+    <div class="container4">
+        <div>Rose</div>
+        <div>Jasmine</div>
+        <div>Lotus</div>
+        <div>Sunflower</div>
+        <div>Lilly</div>
+    </div>
+    <div class="container5">
+        <div>Rose</div>
+        <div>Jasmine</div>
+        <div>Lotus</div>
+        <div>Sunflower</div>
+        <div>Lilly</div>
+    </div>
+</body>
+</html>
+    
+</body>
+</html>
