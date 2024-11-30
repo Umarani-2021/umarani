@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function generateFibonacci(numTerms) {
+    let fibonacciSequence = [];
+    for (let i = 0; i < numTerms; i++) {
+        if (i === 0) {
+            fibonacciSequence.push(0);
+        } else if (i === 1) {
+            fibonacciSequence.push(1);
+        } else {
+            let nextTerm = fibonacciSequence[i - 1] + fibonacciSequence[i - 2];
+            fibonacciSequence.push(nextTerm);
+        }
+    }
+    return fibonacciSequence;
+}
+console.log(generateFibonacci(5));  
+console.log(generateFibonacci(8));  
+    </script>
+</body>
+</html>
