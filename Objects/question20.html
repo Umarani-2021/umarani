@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <script>
+   const products = { apple: 2, banana: 5, cherry: 3 };
+
+function findHighestValue(products) {
+    return Object.entries(products).reduce((max, curr) => curr[1] > max[1] ? curr : max)[0];
+}
+
+
+ </script>   
+</body>
+</html>
